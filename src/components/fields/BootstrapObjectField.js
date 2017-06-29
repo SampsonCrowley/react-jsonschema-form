@@ -84,9 +84,9 @@ class BootstrapObjectField extends Component {
             if (!uiSchema[name]) {
               uiSchema[name] = {};
             }
-            if (!/col\-xs\-.*/.test(uiSchema[name]["classNames"])) {
+            if (!/col\-.*/.test(uiSchema[name]["classNames"])) {
               uiSchema[name]["classNames"] =
-                (uiSchema[name]["classNames"] || "") + " col-xs-12";
+                (uiSchema[name]["classNames"] || "") + " col-12";
             }
             return (
               <SchemaField
